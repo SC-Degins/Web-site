@@ -376,6 +376,10 @@ span{
     color: var(--second-bg-color);
 }
 
+button{
+    size: 7rem;
+}
+
 /* BREAKPOINTS */
 @media (max-width: 1200px){
     html{
