@@ -164,7 +164,7 @@
             <input type="number" placeholder="Mobile Number" id="number" required>
             <input type="text" placeholder="Email Subject" id="subject" required> 
           </div>
-          <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+          <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
           <button type="submit" class="btn">Send Message</button>
     </form>
     </section>
@@ -202,6 +202,7 @@
         + "<br> Email: " +document.getElementById("email").value
         + "<br> Phone No.: " +document.getElementById("number").value
         + "<br> Subject: " +document.getElementById("subject").value
+        + "<br> Text: " +document.getElementById("message").value
     }).then(
       message => alert("Message Sent Successfully")
     );
