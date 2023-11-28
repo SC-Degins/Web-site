@@ -192,10 +192,8 @@
         <script>
             function sendEmail(){
     Email.send({
-        Host : "smtp.gmail.com",
-        Username : "nfgaming4523@gmail.com",
-        Password : "D6718A72AF1FE9B551C50A16B73DDBD02CA4",
-        To : 'nfgaming4523@gmail.com',
+        SecureToken:"e663c52a-d579-4733-a852-ccc89f435147",
+        To : document.getElementById("email").value,
         From : 'nfgaming4523@gmail.com',
         Subject : "New Contact form User",
         Body : "Name: " +document.getElementById("name").value
