@@ -71,8 +71,6 @@ section{
 }
 
 #menu-icon{
-    font-size: 3.6rem;
-    color:var(--text-color);
     display: none;
 }
 
@@ -84,6 +82,7 @@ section{
 
 .home-img img{
     animation: floatImage 4s ease-in-out infinite;
+    width: 100%;
 }
 
 @keyframes floatImage{
@@ -391,6 +390,7 @@ button{
 @media (max-width: 991px){
     .header{
         padding: 2rem 3%;
+        width: 90%;
     }
 
     section{
@@ -414,20 +414,28 @@ button{
     }
 }
 
+@media (max-width: 484px) {
+    .home-img img{
+        width: 100%;
+    }
+}
+
 @media (max-width: 932px){
     #menu-icon{
         display: block;
+        font-size: 3.6rem;
+        color:var(--text-color);
     }
 
     .navbar{
-        position: absolute;
+        /* position: absolute;
         top: 100%;
         left: 0;
         width: 100%;
         padding: 1rem 3%;
         background: var(--bg-color);
         border-top: .1rem solid rgba(0, 0, 0, .2);
-        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2); */
         display: none;
     }
 
@@ -491,13 +499,13 @@ button{
         font-size: 40%;
     }
     .home-img img{
-        width: 100vw;
+        width: 100%;
     }
     .about{
         width: 100%;
     }
     .about-img img{
-        width: 170vw;
+        width: 100%;
     }
     .footer{
         flex-direction: column-reverse;
@@ -521,6 +529,6 @@ button{
         width: 100%;
     }
     .about-img img{
-        width:110%;
+        width:100%;
     }
 }
