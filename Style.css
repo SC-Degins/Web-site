@@ -390,7 +390,7 @@ button{
 @media (max-width: 991px){
     .header{
         padding: 2rem 3%;
-        width: 90%;
+        width: 100%;
     }
 
     section{
